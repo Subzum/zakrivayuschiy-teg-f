@@ -604,27 +604,40 @@
             </button>
           </div>
         </article>
+        </section>
 
-    </main>
-     <dialog id="dialog-id" class="dialog">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 40 40"
-        width="40"
-        height="40"
-        fill="CurrentColor"
-        class="dialog-floppy">
-        <use href="./svg/floppy.svg#floppy"/>
-      </svg>
-      <p class="button__text">Вставьте дискету, чтобы продолжить</p>
+
+         <div class="footer">
       <button
-        class="button__ok button"
-        type="submit"
-        aria-controls="dialog-id"
-        onclick="window['dialog-id'].close()">
-        <span class="button__text">ОК</span>
+        type="button"
+        class="button button__footer"
+        onclick="window['save-in-memory'].showModal()"
+        aria-controls="save-in-memory"
+      >
+        <svg viewbox="0 0 21 21" width="21" height="21" class="floppy">
+          <use href="./svg/floppy.svg#floppy" />
+        </svg>
+        <span class="button__text">Сохранить на память</span>
+      </button>
+    </div>
+    <dialog class="dialog" id="save-in-memory">
+      <div class="dialog__content">
+        <svg width="39" height="39" viewbox="0 0 21 21" class="dialog__floppy">
+          <use href="./svg/floppy.svg#floppy" />
+        </svg>
+        <p class="dialog__content-text">Вставьте дискету, чтобы продолжить</p>
+      </div>
+      <button
+        type="button"
+        class="button dialog__button"
+        onclick="window['save-in-memory'].close()"
+      >
+        <span class="button__text">ок</span>
       </button>
     </dialog>
+
+    
+      </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>

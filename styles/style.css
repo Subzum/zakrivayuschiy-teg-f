@@ -227,3 +227,87 @@
   outline: none;
 }
 
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding-block-end: 103px;
+}
+
+.floppy {
+  fill: #fff;
+  mix-blend-mode: difference;
+}
+
+.button__footer {
+  gap: 8px;
+  margin-block-start: 46px;
+  color: #000;
+  font-size: 14px;
+  line-height: 90%;
+  background: var( --bg-color);
+  inline-size: 335px;
+  block-size: 55px;
+}
+
+.dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.dialog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  border: 2px solid #000;
+  padding: 30px;
+  overflow: hidden;
+  color: #000;
+  font-family: var(--accent-font), fantasy;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 150%;
+  text-transform: uppercase;
+  background-color: var( --bg-color);
+  inline-size: clamp(341px, 100vw, 353px);
+}
+
+.dialog__button {
+  text-transform: uppercase;
+  inline-size: 293px;
+  block-size: 38px;
+}
+
+.dialog:not([open]) {
+  display: none;
+}
+
+.dialog__content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  line-height: 150%;
+}
+
+.dialog__content-text {
+  font-family: var(--accent-font), fantasy;
+  line-height: 1.5;
+  white-space: normal;
+  max-inline-size: 234px;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 0%;
+  height: 100%;
+  background: #000;
+  transition: width 0.5s ease-in-out;
+}
+
+.button:hover::before {
+  width: 100%;
+}
