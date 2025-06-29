@@ -228,7 +228,7 @@
 }
 
 
-.footer {
+.section__save {
   display: flex;
   justify-content: center;
   padding-block-end: 103px;
@@ -239,7 +239,7 @@
   mix-blend-mode: difference;
 }
 
-.button__footer {
+.button__save {
   gap: 8px;
   margin-block-start: 46px;
   color: #000;
@@ -310,4 +310,28 @@
 
 .button:hover::before {
   width: 100%;
+}
+
+@media (width <= 375px) {
+
+.header {
+  block-size: 327px;
+}
+
+.button__save {
+  margin-block-start: 49px;
+  flex-direction: column;
+  inline-size: 306px;
+  block-size: 84px;
+}
+
+.floppy {
+  width: 28px;
+  height: 28px;
+}
+
+.card__text {
+  margin-block-end: 24px;
+}
+
 }
