@@ -18,7 +18,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font, "Inter"), Arial, sans-serif;
-  font-variation-settings: var(--font-weight-main);
+  font-variation-settings: 'wght' 400, 'slnt' 0;
   margin: 0 auto;
   background-image: 
   repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px), 
