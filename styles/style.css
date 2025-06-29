@@ -235,6 +235,7 @@
 }
 
 .floppy {
+  display: inline;
   fill: #fff;
   mix-blend-mode: difference;
   inline-size: 21px;
@@ -291,8 +292,13 @@
   line-height: 150%;
 }
 
-.dialog__floppy-svg-container {
+/*.dialog__floppy-svg-container {
   inline-size: 39px;
+}*/
+
+.dialog__floppy {
+  width: 39px;
+  height: 39px;
 }
 
 .dialog__content-text {
