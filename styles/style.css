@@ -240,6 +240,7 @@
   mix-blend-mode: difference;
   inline-size: 21px;
   block-size: 21px;
+  flex-shrink: 0;
 }
 
 .button__save {
