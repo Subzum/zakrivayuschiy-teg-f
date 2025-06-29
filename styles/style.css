@@ -237,6 +237,8 @@
 .floppy {
   fill: #fff;
   mix-blend-mode: difference;
+  inline-size: 21px;
+  block-size: 21px;
 }
 
 .button__save {
