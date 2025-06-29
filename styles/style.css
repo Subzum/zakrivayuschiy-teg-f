@@ -271,6 +271,7 @@
   text-transform: uppercase;
   background-color: var( --bg-color);
   inline-size: clamp(341px, 100vw, 353px);
+  overflow: auto;
 }
 
 .dialog__button {
@@ -288,6 +289,10 @@
   align-items: center;
   gap: 20px;
   line-height: 150%;
+}
+
+.dialog__floppy-svg-container {
+  inline-size: 39px;
 }
 
 .dialog__content-text {
