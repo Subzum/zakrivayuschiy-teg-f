@@ -638,7 +638,7 @@
         onclick="window['save-to-memory'].showModal()"
         aria-controls="save-to-memory"
       >
-        <svg class="floppy" width="21" height="21" viewBox="0 0 48 48">
+        <svg class="floppy" width="21" height="21" aria-hidden="true">
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
         <span class="button__text">Сохранить на память</span>
@@ -646,8 +646,7 @@
     </div>
     <dialog class="dialog" id="save-to-memory">
       <div class="dialog__content">
-        <svg width="39"
-              height="39" viewbox="0 0 48 48" class="dialog__floppy">
+        <svg width="39" height="39" class="dialog__floppy" aria-hidden="true">
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
         <p class="dialog__content-text">Вставьте дискету, чтобы продолжить</p>

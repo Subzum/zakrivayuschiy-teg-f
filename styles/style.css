@@ -298,8 +298,7 @@
 }*/
 
 .dialog__floppy {
-  width: 39px;
-  height: 39px;
+ min-inline-size: 39px;
 }
 
 .dialog__content-text {
