@@ -279,7 +279,6 @@
 }
 
 .dialog[open] {
-  padding: 0;
   inline-size: 353px;
 }
 
