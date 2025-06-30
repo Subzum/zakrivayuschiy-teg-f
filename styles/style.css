@@ -274,7 +274,7 @@
   inline-size: clamp(341px, 100vw, 353px);
   }
 
-.page:has(.dialog[open]) {
+.page:has(.dialog__content[open]) {
   overflow: hidden;
 }
 
