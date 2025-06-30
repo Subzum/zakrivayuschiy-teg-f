@@ -237,7 +237,7 @@
 .floppy {
   display: inline;
   fill: #fff;
-  /*mix-blend-mode: difference;*/
+  mix-blend-mode: difference;
   inline-size: 21px;
   block-size: 21px;
   flex-shrink: 0;
