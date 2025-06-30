@@ -280,6 +280,7 @@
 
 .dialog[open] {
   inline-size: 353px;
+  padding: 30px;
 }
 
 .dialog__button {
