@@ -243,24 +243,15 @@
 }
 
 .button__save {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 9px;
-  background-color: #fff;
-  min-width: 310px;
-  min-height: 86px;
-  /*gap: 8px;
   margin-block-start: 46px;
   color: #000;
+  gap: 8px;
   font-size: 14px;
   line-height: 90%;
   background: var( --bg-color);
   inline-size: 335px;
   block-size: 55px;
-  padding: 15px 20px;*/
-}
+ }
 
 .dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.75);
@@ -304,9 +295,6 @@
   line-height: 150%;
 }
 
-/*.dialog__floppy-svg-container {
-  inline-size: 39px;
-}*/
 
 .dialog__floppy {
  min-inline-size: 39px;
