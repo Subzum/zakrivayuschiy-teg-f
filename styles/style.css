@@ -274,14 +274,17 @@
   inline-size: clamp(341px, 100vw, 353px);
   }
 
-.page:has(.dialog[open]) {
-  overflow: hidden;
+  .dialog__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
 
-.dialog[open] {
-  inline-size: 353px;
-  padding: 30px;
-}
+
+/*.page:has(.dialog[open]) {
+  overflow: hidden;
+}*/
 
 .dialog__button {
   text-transform: uppercase;
