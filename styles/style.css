@@ -235,14 +235,23 @@
 }
 
 .floppy {
-  display: inline;
-  fill: #fff;
+   width: 28px;
+  height: 28px;
+  color: #fff;
   mix-blend-mode: difference;
-  flex-shrink: 0;
+  z-index: 2;
 }
 
 .button__save {
-  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  background-color: #fff;
+  min-width: 310px;
+  min-height: 86px;
+  /*gap: 8px;
   margin-block-start: 46px;
   color: #000;
   font-size: 14px;
@@ -250,7 +259,7 @@
   background: var( --bg-color);
   inline-size: 335px;
   block-size: 55px;
-  padding: 15px 20px;
+  padding: 15px 20px;*/
 }
 
 .dialog::backdrop {
@@ -272,7 +281,10 @@
   text-transform: uppercase;
   background-color: var( --bg-color);
   inline-size: clamp(341px, 100vw, 353px);
-  overflow: auto;
+  }
+
+.page:has(.dialog[open]) {
+  overflow: hidden;
 }
 
 .dialog__button {
